@@ -70,7 +70,7 @@ attributes
 x256.colors
 -----------
 
-array of hexadecimal color strings indexed by xterm 256 color code
+array of `[red,green,blue]` 24-bit color arrays indexed by xterm 256 color code
 
 install
 =======
