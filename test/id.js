@@ -15,7 +15,7 @@ test(function (t) {
     
     x256.colors.forEach(function (color, ix) {
         var c = x256(color);
-        if (c < 16 && ix >= 16) {
+        if (ix < 16 && c >= 16) {
             t.same(x256.colors[c], x256.colors[ix]);
         }
         else {

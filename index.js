@@ -18,7 +18,7 @@ var x256 = module.exports = function (r, g, b) {
     
     for (var i = 0; i < colors.length; i++) {
         var d = distance(colors[i], c)
-        if (!best || d < best.distance) {
+        if (!best || d <= best.distance) {
             best = { distance : d, index : i };
         }
     }

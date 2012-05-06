@@ -1,7 +1,7 @@
 {
     "name" : "x256",
     "description" : "find the nearest xterm 256 color index for an rgb",
-    "version" : "0.0.0",
+    "version" : "0.0.1",
     "repository" : {
         "type" : "git",
         "url" : "git://github.com/substack/node-x256.git"
