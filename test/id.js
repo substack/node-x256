@@ -3,14 +3,16 @@ var x256 = require('../');
 
 function fudge (x) {
     return Math.max(0, Math.min(255, Math.round(
-        x + Math.random() * 4 - 2
+        x + Math.random() * 10 - 5
     )));
 }
 
 test(function (t) {
-    t.plan(256 + 1);
+    t.plan(256 + 2);
     
     t.equal(x256.colors.length, 256);
+    var missed = 0;
+    
     x256.colors.forEach(function (color, ix) {
         var c = x256(color);
         if (c < 16 && ix >= 16) {
@@ -19,13 +21,16 @@ test(function (t) {
         else {
             t.equal(c, ix);
         }
-        /*
-        t.equal(x256([
+        
+        var i = x256([
             fudge(color[0]),
             fudge(color[1]),
             fudge(color[2])
-        ]), ix);
-        */
+        ]);
+        if (i !== c && i !== ix) missed ++;
     });
+    
+    t.ok(missed < 10, 'missed=' + missed);
+    
     t.end();
 });
