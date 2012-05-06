@@ -13,7 +13,7 @@ var colors = JSON.parse(fs.readFileSync(__dirname + '/colors.json'))
 ;
 
 var x256 = module.exports = function (r, g, b) {
-    var c = [ r, g, b ];
+    var c = Array.isArray(r) ? r : [ r, g, b ];
     var best = null;
     
     for (var i = 0; i < colors.length; i++) {

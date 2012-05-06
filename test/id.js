@@ -8,11 +8,17 @@ function fudge (x) {
 }
 
 test(function (t) {
-    //t.plan(256 * 2 + 1);
+    t.plan(256 + 1);
     
     t.equal(x256.colors.length, 256);
     x256.colors.forEach(function (color, ix) {
-        t.equal(x256(color), ix);
+        var c = x256(color);
+        if (c < 16 && ix >= 16) {
+            t.same(x256.colors[c], x256.colors[ix]);
+        }
+        else {
+            t.equal(c, ix);
+        }
         /*
         t.equal(x256([
             fudge(color[0]),
