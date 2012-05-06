@@ -48,7 +48,7 @@ charm.foreground(ix).write('beep boop');
 
 output:
 
-![x256 charm beep boop](http://substack.net/images/screenshots/x256_raw_beep.png)
+![x256 charm beep boop](http://substack.net/images/screenshots/x256_charm_beep_boop.png)
 
 methods
 =======
