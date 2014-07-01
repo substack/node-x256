@@ -1,35 +1,35 @@
 {
-    "name" : "x256",
-    "description" : "find the nearest xterm 256 color index for an rgb",
-    "version" : "0.0.1",
-    "repository" : {
-        "type" : "git",
-        "url" : "git://github.com/substack/node-x256.git"
-    },
-    "main" : "index.js",
-    "keywords" : [
-        "256",
-        "terminal",
-        "colors",
-        "xterm",
-        "ansi"
-    ],
-    "directories" : {
-        "test" : "test"
-    },
-    "scripts" : {
-        "test" : "tap test/*.js"
-    },
-    "devDependencies" : {
-        "tap" : "~0.2.4"
-    },
-    "engines" : {
-        "node" : ">=0.4.0"
-    },
-    "license" : "MIT",
-    "author" : {
-        "name" : "James Halliday",
-        "email" : "mail@substack.net",
-        "url" : "http://substack.net"
-    }
+  "name": "x256",
+  "description": "find the nearest xterm 256 color index for an rgb",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/substack/node-x256.git"
+  },
+  "main": "index.js",
+  "keywords": [
+    "256",
+    "terminal",
+    "colors",
+    "xterm",
+    "ansi"
+  ],
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "devDependencies": {
+    "tape": "^2.13.3"
+  },
+  "engines": {
+    "node": ">=0.4.0"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "James Halliday",
+    "email": "mail@substack.net",
+    "url": "http://substack.net"
+  }
 }

@@ -2,7 +2,6 @@
 // http://www.calmar.ws/vim/256-xterm-24bit-rgb-color-chart.html
 // %s/ *\d\+ \+#\([^ ]\+\)/\1\r/g
 
-var fs = require('fs');
 var colors = require('./colors.json')
     .map(function (hex) {
         var r = parseInt(hex.slice(0,2), 16);

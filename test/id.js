@@ -1,4 +1,4 @@
-var test = require('tap').test;
+var test = require('tape');
 var x256 = require('../');
 
 function fudge (x) {
