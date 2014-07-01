@@ -1,14 +1,14 @@
-x256
-====
+# x256
 
-Return the nearest
+return the nearest
 [xterm 256 color code](http://www.frexx.de/xterm-256-notes/)
 for rgb inputs.
 
+[![testling badge](https://ci.testling.com/substack/node-x256.png)](https://ci.testling.com/substack/node-x256)
+
 [![build status](https://secure.travis-ci.org/substack/node-x256.png)](http://travis-ci.org/substack/node-x256)
 
-example
-=======
+# example
 
 You can just print the index:
 
@@ -50,15 +50,13 @@ output:
 
 ![x256 charm beep boop](http://substack.net/images/screenshots/x256_charm_beep_boop.png)
 
-methods
-=======
+# methods
 
 ```
 var x256 = require('x256')
 ```
 
-x256(red, green, blue)
-----------------------
+## x256(red, green, blue)
 
 Return the nearest xterm 256 color code for the 24-bit `[red, green, blue]`
 values.
@@ -66,16 +64,13 @@ values.
 `red`, `green`, and `blue` should each be integers from 0 through 255,
 inclusive.
 
-attributes
-==========
+# attributes
 
-x256.colors
------------
+## x256.colors
 
 array of `[red,green,blue]` 24-bit color arrays indexed by xterm 256 color code
 
-install
-=======
+# install
 
 With [npm](http://npmjs.org) do:
 
@@ -83,7 +78,6 @@ With [npm](http://npmjs.org) do:
 npm install x256
 ```
 
-license
-=======
+# license
 
 MIT
