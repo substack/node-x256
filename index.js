@@ -3,7 +3,7 @@
 // %s/ *\d\+ \+#\([^ ]\+\)/\1\r/g
 
 var fs = require('fs');
-var colors = JSON.parse(fs.readFileSync(__dirname + '/colors.json'))
+var colors = require('./colors.json')
     .map(function (hex) {
         var r = parseInt(hex.slice(0,2), 16);
         var g = parseInt(hex.slice(2,4), 16);
